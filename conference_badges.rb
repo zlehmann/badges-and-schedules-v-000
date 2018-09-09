@@ -16,3 +16,12 @@ def assign_rooms(speakers)
   end
   return room_assign
 end
+
+def printer()
+  output = []
+  batch = batch_badge_creator()
+  rooms = assign_rooms()
+  batch.each { |badget| output.push(batch) }
+  rooms.each { |room| output.push(room) }
+  return output
+end
