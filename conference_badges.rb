@@ -18,10 +18,8 @@ def assign_rooms(speakers)
 end
 
 def printer(attendees)
-  output = []
   batch = batch_badge_creator(attendees)
   rooms = assign_rooms(attendees)
-  batch.each { |badget| output.push(batch) }
-  rooms.each { |room| output.push(room) }
-  return output
+  batch.each { |badge| puts "#{badge}" }
+  rooms.each { |room| puts "#{room}" }
 end
